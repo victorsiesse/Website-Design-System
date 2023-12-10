@@ -1,11 +1,10 @@
 body {
+    background-color: #f9fcea;
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    
 }
 
-/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -14,6 +13,13 @@ nav {
     height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -49,16 +55,19 @@ nav .active-link {
 }
 
 /* Header */
-header {
-    background-color: aqua;
-    padding: 50px 200px;
+
+main {
     position: relative;
     top: 100px;
+
+}
+header {
+    padding: 50px 200px;
     height: 500px;
    
 }
 
-.banner {
+.showroom {
     border: 1px solid gray;
     border-radius: 10px;
     background-image: url("../images/test.png"); 
@@ -68,9 +77,24 @@ header {
     height: 100%;
 }
 
-.material-symbols-outlined {
-    font-size: 40px;
+.showroom-items {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: black;
 }
+
+.showroom-items a span {
+    font-size: 60px;
+    color: black;
+}
+
+.showroom-items a span:hover {
+    color: rgba(211, 211, 211, 0.5);
+}
+
 /* Main */
 
 /* Footer */
